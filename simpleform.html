@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>simple form</title>
+    <script>
+      function getname() {
+        var FName = document.getElementById("fName");
+        var MName = document.getElementById("mName");
+        var LName = document.getElementById("lName");
+        var Fullname = document.getElementById("fullName");
+        Fullname.value = fName.value + " " + mName.value + " " + LName.value;
+      }
+      function clearme(){
+        var clrfname = document.getElementById("fName");
+          var clrlname=document.getElementById("lName");
+          var clrmname=document.getElementById("mName");
+            var clrfullname=document.getElementById("fullName")
+
+            clrfname.value=" ";
+            clrlname.value=" ";
+            clrmname.value=" ";
+            clrfullname.value=" ";
+
+        }
+    </script>
+   
+  </head>
+  <body>
+    <h1>eMployee Details</h1>
+    <h3>Personal Details</h3>
+    <label>First namne:<input type="text" id="fName" /></label> <br />
+    <br />
+    <label>Middle name:<input type="text" id="mName" /></label> <br />
+    <br />
+    <label>Last name:<input type="text" id="lName" /></label> <br /><br />
+    <label>Full name:<input type="text" id="fullName" /></label> <br />
+    <br />
+    <br />
+    <button onclick="getname()">Submit</button>
+    <button onclick="clearme()">clear</button>
+  </body>
+</html>
