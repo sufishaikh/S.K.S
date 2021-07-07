@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple form</title>
+        <script>
+            function setname(){
+             var fName=document.getElementById("firstname");
+             var lName=document.getElementById("lastname");
+             var mName=document.getElementById("middlename")
+             var fullName=document.getElementById("fullname");
+             
+               fullName.value=fName.value+ " " +mName.value+ " " +lName.value
+                console.log(fName.value)
+            }
+        </script>
+        <body>
+            <h1>Employee Details</h1> <br>
+            <hr>
+            <h3>Personal info</h3> <br>
+            <label>First name:<input type="text" id="firstname"></label> <br> <br>
+            <label>Middle name:<input type="text" id="middlename"><br><br></label>
+            <label>Last name:<input type="text" id="lastname"></label>
+            <button onclick="setname()">Full name</button> <br> <br>
+            
+            <label>Full name:<input type="text" id="fullname"></label>
+            <br>
+            <br>
+        </body>
+    </head>
+</html>
