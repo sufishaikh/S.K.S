@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-TicTacToe</title>
+    <script>
+        var palyer="1";
+        function tichere(id) {
+            
+            var objtic = document.getElementById(id);
+            var objplayer = document.getElementById("player");
+            if(player==1){
+            objtic.style="color:brown;font-size:30px;";
+            objplayer.style="color:red;font-size:30px;";
+            objtic.innerHTML="ME";
+        player=2;}
+            else{
+                 objtic.style="color:green;font-size:30px;";
+             objplayer.style="color:orange;font-size:30px;";
+            objtic.innerHTML="HE"
+            player=1;}
+            objplayer.innerHTML="player"+player;
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1><span id="player" style="color: red;font-size: 30px;">player</span></h1>
+    <table border="2px">
+        <tr>
+            <td> <span id="11" onclick="tichere('11')" style="color: gray;font-size:30px ">00</span> </td>
+            <td> <span id="12" onclick="tichere('12')" style="color: gray; font-size:30px">00</span> </td>
+            <td> <span id="13" onclick="tichere('13')" style="color: gray; font-size:30px">00</span> </td>
+        </tr>
+
+        <tr>
+            <td> <span id="21" onclick="tichere('21')" style="color: gray; font-size:30px">00</span> </td>
+            <td> <span id="22" onclick="tichere('22')" style="color: gray; font-size:30px">00</span> </td>
+            <td> <span id="23" onclick="tichere('23')" style="color: gray; font-size:30px">00</span> </td>
+
+        <tr>
+            <td> <span id="31" onclick="tichere('31')" style="color: gray; font-size:30px">00</span> </td>
+            <td> <span id="32" onclick="tichere('32')" style="color: gray; font-size:30px">00</span> </td>
+            <td> <span id="33" onclick="tichere('33')" style="color: gray; font-size:30px">00</span> </td>
+        </tr>
+
+
+        </tr>
+    </table>
+</body>
+
+</html>
