@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple form</title>
+    <script>
+        function changecolor() {
+
+            var objspan = document.getElementById("s1");
+            var objspan2 = document.getElementById("s2");
+            objspan.style = "color:blue";
+            objspan2.style = "color:black";
+        }
+
+        function changecolor2() {
+
+            var objspan = document.getElementById("s1");
+            var objspan2 = document.getElementById("s2");
+            objspan.style = "color:green";
+            objspan2.style = "color:brown";
+        }
+
+        function changecolor3() {
+
+            var objspan = document.getElementById("s1");
+            var objspan2 = document.getElementById("s2");
+            objspan.style = "color:black";
+            objspan2.style = "color:gray";
+        }
+    </script>
+
+<body>
+    <h1>Theme challenge</h1> <br><br>
+    <hr>
+    <h2><span id="s1" style="color: blue;">Pickup</span>
+        <span id="s2" style="color: orange;">Biz</span>
+    </h2>
+    <br>
+    <button onclick="changecolor()">Theme1</button>
+    <button onclick="changecolor2()">Theme2</button>
+    <button onclick="changecolor3()">Theme3</button>
+
+
+
+
+</body>
+</body>
+</head>
+
+</html>
